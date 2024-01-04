@@ -41,7 +41,7 @@ To develop a data lake solution using Azure Databricks using a lake house archit
 
 The star schema based on the provided dataset looks like this:
 
-<img src="screenshots/star_schema.png>
+<img src="screenshots/star_schema.png">
 
 ### Task 2: Import the data into Azure Databricks using Delta Lake to create a Bronze data store
 
