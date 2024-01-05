@@ -45,6 +45,38 @@ The star schema based on the provided dataset looks like this:
 
 ### Task 2: Import the data into Azure Databricks using Delta Lake to create a Bronze data store
 
+The very first thing would be to create Azure Databricks workspace. Since this a cloud lab, then the resource was already provided by Udacity:
+
+<img src="screenshots/databricks.png">
+
+Next, create the Azure Databricks cluster. For this project, it was strongly recommended to create a single-node cluster:
+
+<img src="screenshots/cluster.png">
+
+Next, upload the files to DBFS:
+
+<img src="screenshots/dbfs.png">
+
+After creating the Extract notebook, the data is imported to Azure Databricks in delta format:
+
+<img src="screenshots/delta.png">
+
 ### Task 3: Create a gold data store in Delta Lake tables
 
+After creating the Load notebook, the staging tables are created and the data is loaded into those tables:
+
+<img src="screenshots/staging.png">
+
+The example data can be seen from the tables:
+
+<img src="screenshots/example_data.png">
+
 ### Task 4: Transform the data into the star schema for a Gold data store
+
+After creating the Transform notebook, the data in staging tables is transformed into star schema and the tables can be seen in the workspace:
+
+<img src="screenshots/transform.png">
+
+Table dim_date example data:
+
+<img src="screenshots/example_transform.png">
